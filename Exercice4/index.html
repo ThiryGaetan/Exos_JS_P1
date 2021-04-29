@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P1_Ex4</title>
+</head>
+<body>
+    <form action="#">
+        <label for="lastName">Nom : </label>
+        <input type="text" id="lastName" name="lastName"> <br>
+        <label for="firstName">Prénom : </label>
+        <input type="text" id="firstName" name="firstName"> <br>
+        <label for="city">Ville : </label>
+        <input type="text" id="city" name="city">
+    </form>
+    <button onclick="displayAlert()">Alert</button>
+    <script>
+        function displayAlert(){
+            let lastNameAlert = document.getElementById('lastName').value;
+            let firstNameAlert = document.getElementById('firstName').value;
+            let cityAlert = document.getElementById('city').value;
+            alert('Nom : '+lastNameAlert+'\nPrénom : '+firstNameAlert+'\nVille : '+cityAlert);
+        }
+    </script>
+</body>
+</html>
