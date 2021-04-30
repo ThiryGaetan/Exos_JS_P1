@@ -15,13 +15,14 @@
         <label for="city">Ville : </label>
         <input type="text" id="city" name="city">
     </form>
-    <button onclick="displayAlert()">Alert</button>
+    <button id="btn">Alert</button>
     <script>
+        document.getElementById("btn").addEventListener("click", displayAlert);
         function displayAlert(){
-            let lastNameAlert = document.getElementById('lastName').value;
-            let firstNameAlert = document.getElementById('firstName').value;
-            let cityAlert = document.getElementById('city').value;
-            alert('Nom : '+lastNameAlert+'\nPrénom : '+firstNameAlert+'\nVille : '+cityAlert);
+            let lastNameAlert = document.getElementById("lastName").value;
+            let firstNameAlert = document.getElementById("firstName").value;
+            let cityAlert = document.getElementById("city").value;
+            alert("Nom : "+lastNameAlert+"\nPrénom : "+firstNameAlert+"\nVille : "+cityAlert);
         }
     </script>
 </body>
